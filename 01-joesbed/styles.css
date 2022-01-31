@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+ max-width: 960px; 
+ margin: 0 auto;  
+}
+main {
+    font-family: 'Overlock', cursive;
+}
+header { 
+    margin: 0 auto;
+    background-image: url(https://www.gvbb.com/wp-content/uploads/2012/10/one1.jpg);
+    background-repeat: no-repeat;
+    background-position:left;
+    height: 20vh;
+}
+header h1 {
+    position: relative;
+    bottom: 9.5rem;
+    left: 2rem;
+    font-size: 6rem;
+    color: white;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transform:rotate(-20deg);
+    z-index:2;
+    font-family: 'Seaweed Script', cursive;
+}
+header h2 { 
+    position: relative;
+    bottom: 4rem;
+    color: white;
+    font-size: 1rem;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    padding: .5rem 0 .5rem 12rem;
+    z-index: 1;
+    letter-spacing: .2rem;
+    font-family: 'Overlock';
+}
+
+.greetingdate {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: center;
+    box-shadow: 0px 0px 5px grey;
+    box-shadow: 2px 2px 5px black;
+    margin: 1rem;
+}
+.greetingdate p {
+    font-size: 1.5rem;
+}
+
+button {
+    font-family: 'Overlock', cursive;
+    padding: .5rem;
+    border-radius: 5px;
+    position: relative;
+    bottom: .2rem;
+    left: 1rem;
+}
+
+.nifty {
+ box-shadow: 2px 2px 5px black;
+ margin: 1rem;
+ padding: 2rem;
+}
+ul {
+    padding: 1rem;
+}
+.novacancy {
+    text-align: center;
+    border-bottom: 2px solid red;
+    font-size: 1rem;
+}
+footer {
+    background: rgba(0,0,0,.5);
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-family: 'Overlock';
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital@0;1&family=Seaweed+Script&display=swap" rel="stylesheet">
+    <title>01 Joe's Bed and Breakfast</title>
+  </head>
+  <body>
+    <header>g
+      <h1 id="company"></h1>
+      <h2 id="slogan"></h2>
+    </header>
+    <main>
+      <div class="greetingdate">
+        <p id="greeting"></p>
+        <h2 id="date">Check Availability:
+          <button onclick="noVacancy()">
+            <script>
+                const date = document.querySelector('#date')
+                let thedate = new Date();
+                document.write(thedate.toLocaleDateString());
+                function noVacancy() {
+                  const h2 = document.createElement('h2')
+                  h2.classList = 'novacancy'
+                  h2.innerText = 'No Vacancy'
+                  date.appendChild(h2)
+                }
+            </script>
+          </button>
+        </h2>
+        
+      </div>
+        <div class="nifty">
+          <h2>My Accomplishments</h2>
+          <ul>
+            <li>Created a button to display vacancy</li>
+            <li>Programmatically added name and slogan through Javascript</li>
+            <li>Supplied a date through Javascript</li>
+            <li>Created a personal welcome message for every user</li>
+            <li>Professionally styled the page using CSS</li>
+          </ul>
+        </div>
+    </main>
+    <footer>
+      <p>Assignment for DGM2760 by Hannah Armstrong</p>
+    </footer>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
