@@ -1,3 +1,7 @@
 
 
-console.log(Math.round(-5.34))
+
+
+function evalGuess() { //onclick event for div d1
+
+}
