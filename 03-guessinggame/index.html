@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+     
     <title>Guessing Game</title>
-</head>
-<body>
-    <p>guessinggame</p>
-
-<div class="d1">
-    <div>
-        <input id="guess" type="number" placeholder="Number">
-        <button onclick="evalGuess()">Guess</button>
+  </head>
+  
+  <body>
+     
+    <header>
+      <h1>Guessing Game</h1>
+      <h2>Try Your Luck and Get a Prize</h2>
+      <div class="rulesDiv"></div>
+    </header>
+    <div class="gameContainer">
+      <!--Three sectioned divs that contain the input, submit button and results-->
+      <div class="div1">
+        <!--First Left div: Scoring system and user input guess-->
+        <div class="scoreSystem">
+          <h3>Scoring System</h3>
+          <p>Blue Ribbon: 1-3 attempts</p>
+          <p>Red Ribbon: 4-6 attempts</p>
+          <p>Yellow Ribbon: 7+ attempts</p>
+        </div>
+        <div class="numberInput">
+          <input id="guess" type="number" placeholder="number" />
+        </div>
+      </div>
+      <div class="div2">
+        <!--Image of question mark with submitting guess button underneath-->
+        <div class="questionImage">
+          <img href="#" />
+        </div>
+        <div class="submitButton">
+          <button onclick="attemptInput()" >Guess</button>
+        </div>
+      </div>
+      <div class="div3">
+        <!--Scoring results showing appropiate ribbon and number of attempts-->
+        <div id="results"></div>
+        <div class="attemptNumber"></div>
+        <div><p id="feedback">innertext</p></div>
+      </div>
     </div>
-</div>
-
-<div class="d2">
-    <div>
-
+    <div class="stuffLearned">
+      <!--Synopsis of technologies learned through this project-->
+      <h4></h4>
     </div>
-</div>
-
-<div class="d3">
-    <div>
-
-    </div>
-</div>
-
-<div class="d4">
-    <div>
-
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-    <script src="script.js" type="module"></script>
-</body>
+    <footer>&copy; 2021 Hannah Armstrong for Educational Purposes</footer>
+    <script src="/03-guessinggame/script.js"></script>
+  </body>
 </html>
