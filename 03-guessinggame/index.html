@@ -5,51 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700;800&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
     <title>Guessing Game</title>
   </head>
-  
+
   <body>
-     
     <header>
       <h1>Guessing Game</h1>
       <h2>Try Your Luck and Get a Prize</h2>
       <div class="rulesDiv"></div>
     </header>
-    <div class="gameContainer">
-      <!--Three sectioned divs that contain the input, submit button and results-->
-      <div class="div1">
-        <!--First Left div: Scoring system and user input guess-->
-        <div class="scoreSystem">
-          <h3>Scoring System</h3>
-          <p>Blue Ribbon: 1-3 attempts</p>
-          <p>Red Ribbon: 4-6 attempts</p>
-          <p>Yellow Ribbon: 7+ attempts</p>
+    <main>
+      <div class="gameContainer">
+        <!--Three sectioned divs that contain the input, submit button and results-->
+        <div class="div1">
+          <!--First Left div: Scoring system and user input guess-->
+          <div class="scoreSystem">
+            <h3>Scoring System</h3>
+            <p>Blue Ribbon: 1-3 attempts</p>
+            <p>Red Ribbon: 4-6 attempts</p>
+            <p>Yellow Ribbon: 7+ attempts</p>
+          </div>
+          <div class="numberInput">
+            <input id="guess" type="number" placeholder="number" />
+          </div>
         </div>
-        <div class="numberInput">
-          <input id="guess" type="number" placeholder="number" />
+        <div class="div2">
+          <!--Image of question mark with submitting guess button underneath-->
+          <div class="questionImage">
+            <img href="#" />
+          </div>
+          <div class="submitButton">
+            <button onclick="attemptInput()">Guess</button>
+          </div>
+        </div>
+        <div class="div3">
+          <!--Scoring results showing appropiate ribbon and number of attempts-->
+          <div id="results"></div>
+          <div class="attemptNumber"></div>
+          <div><p id="feedback">innertext</p></div>
         </div>
       </div>
-      <div class="div2">
-        <!--Image of question mark with submitting guess button underneath-->
-        <div class="questionImage">
-          <img href="#" />
-        </div>
-        <div class="submitButton">
-          <button onclick="attemptInput()" >Guess</button>
-        </div>
+      <div class="stuffLearned">
+        <!--Synopsis of technologies learned through this project-->
+        <h4></h4>
       </div>
-      <div class="div3">
-        <!--Scoring results showing appropiate ribbon and number of attempts-->
-        <div id="results"></div>
-        <div class="attemptNumber"></div>
-        <div><p id="feedback">innertext</p></div>
-      </div>
-    </div>
-    <div class="stuffLearned">
-      <!--Synopsis of technologies learned through this project-->
-      <h4></h4>
-    </div>
+    </main>
     <footer>&copy; 2021 Hannah Armstrong for Educational Purposes</footer>
     <script src="/03-guessinggame/script.js"></script>
   </body>
