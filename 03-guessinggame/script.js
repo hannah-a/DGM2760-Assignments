@@ -45,7 +45,7 @@ function giveAward() {
             imagePath = 'images/redribbon.png'
             break;
         default: //default yellow ribbon for all guesses higher than 6 
-            imagePath = 'images/yellowribbon.jfif'
+            imagePath = 'images/yellowribbon.png'
             break;
     }
 
