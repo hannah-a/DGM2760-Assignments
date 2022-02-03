@@ -1,0 +1,15 @@
+.gameContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+//When small, divs are stacked vertically and are 100%. With medium and larger divs are horizontal and 33%
+.div1 {
+    width: 33%;
+}
+.div2 {
+    width: 33%;
+}
+.div3 {
+    width: 33%;
+}

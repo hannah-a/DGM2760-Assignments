@@ -17,7 +17,7 @@
   <body>
     <header>
       <h1>Guessing Game</h1>
-      <h2>Try Your Luck and Get a Prize</h2>
+      <h2>Guess a Number Between 1 and 15!</h2>
       <div class="rulesDiv"></div>
     </header>
     <main>
@@ -41,14 +41,16 @@
             <img src="/03-guessinggame/images/questionmark.png" alt="question mark"/>
           </div>
           <div class="submitButton">
-            <button onclick="attemptInput()">Guess</button>
+            <button class="guessButton" onclick="attemptInput()">Guess</button>
           </div>
         </div>
         <div class="div3">
+            <h3>Results</h3>
           <!--Scoring results showing appropiate ribbon and number of attempts-->
-          <div id="results"></div>
+          <div><p id="feedback"></p></div>
+        
           <div class="attemptNumber"></div>
-          <div><p id="feedback">innertext</p></div>
+          <div id="results"></div>
         </div>
       </div>
       <div class="stuffLearned">
