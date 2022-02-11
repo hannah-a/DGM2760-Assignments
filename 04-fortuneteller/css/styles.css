@@ -3,31 +3,27 @@
   box-sizing: border-box;
   margin: 0; }
 
-/* line 6, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+/* line 5, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
 body {
-  font-family: 'Catamaran';
+  font-family: 'Catamaran', 'cursive';
   max-width: 75rem;
   margin: 0 auto; }
 
-/* line 12, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+/* line 11, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
 header {
   text-align: center; }
-  /* line 14, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+  /* line 13, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
   header h1 {
     font-family: 'Elsie', cursive;
     font-size: 2rem;
-    padding-top: 1rem; }
+    padding-top: 4rem; }
 
-/* line 21, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+/* line 20, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
 main {
   margin: 0 auto;
   padding: 1rem;
   width: 100%; }
-  /* line 25, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
-  main div {
-    max-width: 800px;
-    margin: 0 auto; }
-  /* line 29, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+  /* line 24, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
   main div.crystalBall {
     background-image: url(/04-fortuneteller/images/crystalball.png);
     background-size: contain;
@@ -35,19 +31,49 @@ main {
     width: auto;
     height: 0;
     padding-top: 100%;
-    border-radius: 50%; }
-    /* line 38, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
-    main div.crystalBall div h2 {
-      background: white; }
+    border-radius: 50%;
+    position: relative; }
+    /* line 33, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+    main div.crystalBall h2 {
+      margin: 0;
+      padding: .5rem;
+      width: 50%;
+      background: white;
+      background: radial-gradient(circle, white 0%, rgba(255, 255, 255, 0) 100%);
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1rem;
+      text-align: center; }
+  /* line 47, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+  main .learned {
+    background: #adfaf6;
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: 75%; }
+
+/* line 54, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_small.scss */
+footer {
+  padding: 1rem; }
 
 @media only screen and (min-width: 35rem) {
   /* line 2, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_medium.scss */
   header h1 {
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  /* line 8, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_medium.scss */
+  main div.crytalBall h2 {
+    font-size: 4rem; }
+  /* line 12, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_medium.scss */
+  main .learned {
+    font-size: 100%; } }
 
 @media only screen and (min-width: 75rem) {
   /* line 2, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_large.scss */
   header h1 {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  /* line 8, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/04-fortuneteller/scss/_large.scss */
+  main div.crystalBall h2 {
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=styles.css.map */

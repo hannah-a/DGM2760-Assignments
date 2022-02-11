@@ -2,9 +2,8 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 body {
-    font-family: 'Catamaran';
+    font-family: 'Catamaran', 'cursive';
     max-width: 75rem;
     margin: 0 auto;
 }
@@ -14,7 +13,7 @@ header {
     h1 {
         font-family: 'Elsie', cursive;
         font-size: 2rem;
-        padding-top: 1rem;
+        padding-top: 4rem;
     }
 }
 
@@ -22,10 +21,6 @@ main {
     margin: 0 auto;
     padding: 1rem;
     width: 100%;
-    div {
-        max-width: 800px;
-        margin: 0 auto;
-    }
     div.crystalBall {
         background-image: url(/04-fortuneteller/images/crystalball.png);
         background-size: contain;
@@ -34,10 +29,28 @@ main {
         height: 0;
         padding-top: 100%;
         border-radius: 50%;
-        div{
+        position: relative;
             h2{
-                background: white;
+                margin: 0;
+                padding: .5rem;
+                width: 50%; //makes text box half as small so it fits in ball
+                background: rgb(255,255,255);
+                background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+                position: absolute;
+                top: 40%; //positioned from the top of div
+                left: 50%; //positioned from the left of div
+                transform: translate(-50%, -50%); //moves back towards left side and upwards
+                font-size: 1rem;
+                text-align: center;
             }
-        }
     }
+    .learned {
+        background: rgb(173, 250, 246);
+        padding: 2rem;
+        border-radius: 20px;
+        font-size: 75%;
+    }
+}
+footer {
+    padding: 1rem;
 }
