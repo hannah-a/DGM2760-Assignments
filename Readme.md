@@ -7,3 +7,5 @@
 [Inspector Clouseau](https://dgm2760hannah-a.netlify.app/02-inspectorclousea/index.html)
 
 [Guessing Game](https://dgm2760hannah-a.netlify.app/03-guessinggame/index.html)
+
+[The Fortune Teller](https://dgm2760hannah-a.netlify.app/04-fortuneteller/index.html)

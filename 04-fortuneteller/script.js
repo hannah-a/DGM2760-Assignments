@@ -72,7 +72,7 @@ console.log(fortuneRevealed)
 //inputs fortune into page
 document.querySelector('#fortune').innerText = fortuneRevealed
 
-
+//Unused switch funciton
 // function getFortune(fate) {
 //     let message
 //     switch (fate) {
