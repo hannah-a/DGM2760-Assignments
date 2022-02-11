@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Catamaran';
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    h1 {
+        font-family: 'Elsie', cursive;
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+}
+
+main {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    div {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    div.crystalBall {
+        background-image: url(/04-fortuneteller/images/crystalball.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 0;
+        padding-top: 100%;
+        border-radius: 50%;
+        div{
+            h2{
+                background: white;
+            }
+        }
+    }
+}

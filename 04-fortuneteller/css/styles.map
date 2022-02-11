@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/_variables.scss",
+		"../scss/_small.scss",
+		"../scss/_medium.scss",
+		"../scss/_large.scss"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\r\n@import \"small\";\r\n\r\n@media only screen and (min-width: 35rem) {\r\n    @import \"medium\";\r\n}\r\n\r\n@media only screen and (min-width: 75rem) {\r\n    @import \"large\";\r\n}\r\n\r\n",
+		"",
+		"* {\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n}\r\n\r\nbody {\r\n    font-family: 'Catamaran';\r\n    max-width: 75rem;\r\n    margin: 0 auto;\r\n}\r\n\r\nheader {\r\n    text-align: center;\r\n    h1 {\r\n        font-family: 'Elsie', cursive;\r\n        font-size: 2rem;\r\n        padding-top: 1rem;\r\n    }\r\n}\r\n\r\nmain {\r\n    margin: 0 auto;\r\n    padding: 1rem;\r\n    width: 100%;\r\n    div {\r\n        max-width: 800px;\r\n        margin: 0 auto;\r\n    }\r\n    div.crystalBall {\r\n        background-image: url(/04-fortuneteller/images/crystalball.png);\r\n        background-size: contain;\r\n        background-repeat: no-repeat;\r\n        width: auto;\r\n        height: 0;\r\n        padding-top: 100%;\r\n        border-radius: 50%;\r\n        div{\r\n            h2{\r\n                background: white;\r\n            }\r\n        }\r\n    }\r\n}",
+		"header {\r\n    h1 {\r\n        font-size: 2.5rem;\r\n    }\r\n}",
+		"header {\r\n    h1 {\r\n        font-size: 3rem;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AEAA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,CAAC,GACZ;;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,WAAW;EACxB,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,MAAM,GACjB;;;AAED,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,MAAM,GAMrB;;EAPD,AAEI,MAFE,CAEF,EAAE,CAAC;IACC,WAAW,EAAE,gBAAgB;IAC7B,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,IAAI,GACpB;;;AAGL,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI,GAmBd;;EAtBD,AAII,IAJA,CAIA,GAAG,CAAC;IACA,SAAS,EAAE,KAAK;IAChB,MAAM,EAAE,MAAM,GACjB;;EAPL,AAQI,IARA,CAQA,GAAG,AAAA,YAAY,CAAC;IACZ,gBAAgB,EAAE,6CAA6C;IAC/D,eAAe,EAAE,OAAO;IACxB,iBAAiB,EAAE,SAAS;IAC5B,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,CAAC;IACT,WAAW,EAAE,IAAI;IACjB,aAAa,EAAE,GAAG,GAMrB;;IArBL,AAiBY,IAjBR,CAQA,GAAG,AAAA,YAAY,CAQX,GAAG,CACC,EAAE,CAAA;MACE,UAAU,EAAE,KAAK,GACpB;;AFpCb,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;;EGHxC,AACI,MADE,CACF,EAAE,CAAC;IACC,SAAS,EAAE,MAAM,GACpB;;AHIL,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;;EIPxC,AACI,MADE,CACF,EAAE,CAAC;IACC,SAAS,EAAE,IAAI,GAClB"
+}
