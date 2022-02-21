@@ -10,6 +10,9 @@ const listTrees = () => {
         treeList += `${tree} <br>`
    })
    displayResults.innerHTML = `${treeList} <span>${trees.length} elements long</span>`
+   if(trees.length === 0) { //error handling when all the trees are removed
+       errorElement.textContent = 'No Trees on List, Get Planting!'
+   }
 }
 listTrees()
 
@@ -34,7 +37,5 @@ document.querySelector('#remove_tree1').onclick = () => {
     if (trees.length > 0) {
         trees.shift()
         listTrees() //called to update list
-    } else {
-        errorElement.textContent = 'No Trees to Remove'
     }
 }
