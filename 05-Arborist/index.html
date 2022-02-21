@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/05-Arborist/css/styles.css" rel="stylesheet">
     <title>The Arborist</title>
 </head>
 <body>
@@ -13,20 +14,38 @@
     </header>
     <main>
         <div class="treeButtons">
-            <div class="anyTree"></div>
-            <div class="treeList"></div>
-            <div class="removeTree"></div>
-            <div class="addTree"></div>
+            <h2>Add a Tree</h2>
+                <button id="add_redwood">Add a Redwood Tree to the End</button>
+                <button id="add_pear">Add a pear to the Start</button>
+            <h2>Remove a Tree</h2>
+                <button id="remove_tree1">Remove the first tree</button>
+                <button id="remove_tree2">Remove the second tree</button>
+                <button class="remove_treeLast">Remove the last tree</button>
+            <h2>Manipulating the tree list</h2>
+                <button id="sortTrees">Sort the trees A>Z</button>
+                <button id="lowerTrees">Make all the trees lower case</button>
+            <h2>Getting any tree from the list</h2>
+                <button id="showName3">What is the name of tree number three?</button>
+                <button id="showName4">What is the name of tree number four?</button>
         </div>
-        <div class="treeDisplay">
-            <div class="treeList"></div>
-            <div class="errorList"></div>
+            <h2>Your Tree List</h2>
+            <div id="displayResults"></div>
+            <h2>Warning</h2>
+            <div id="error"></div>
+        <div class="learned">
+            <h3>What I Learned</h3>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-        <div class="learned"></div>
 
     </main>
     <footer>
 <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
     </footer>
+    <script src="/05-Arborist/script.js"></script>
 </body>
 </html>
