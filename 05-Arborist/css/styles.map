@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss",
+		"../scss/_small.scss",
+		"../scss/_medium.scss",
+		"../scss/_large.scss"
+	],
+	"sourcesContent": [
+		"@import \"small\";\r\n\r\n@media only screen and (min-width: 35rem) {\r\n    @import \"medium\";\r\n}\r\n@media only screen and (min-width: 60rem) {\r\n    @import \"large\";\r\n}",
+		"",
+		"",
+		""
+	],
+	"names": [],
+	"mappings": ""
+}
