@@ -9,3 +9,5 @@
 [Guessing Game](https://dgm2760hannah-a.netlify.app/03-guessinggame/index.html)
 
 [The Fortune Teller](https://dgm2760hannah-a.netlify.app/04-fortuneteller/index.html)
+
+[The Utah Arborist](https://dgm2760hannah-a.netlify.app/05-arborist/index.html)
