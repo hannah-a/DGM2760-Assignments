@@ -1,0 +1,272 @@
+/* line 1, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 7, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* line 10, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+header, main, footer, .treeList {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* line 15, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+.headerWrapper {
+  background-color: #252725;
+  padding: 1rem;
+}
+
+/* line 19, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+header {
+  color: white;
+  padding: 1rem;
+}
+
+/* line 22, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+header h1 {
+  font-family: 'Major Mono Display', monospace;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+/* line 28, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+header h2 {
+  padding-top: .3rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* line 35, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main {
+  padding: 1rem;
+}
+
+/* line 37, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main h1 {
+  padding: 1rem 0;
+}
+
+/* line 40, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 43, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons {
+  flex-basis: 50%;
+}
+
+/* line 45, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .treeAddButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 51, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree {
+  padding: 1rem;
+}
+
+/* line 53, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree .addButtons {
+  background-color: #1f291f;
+  border-radius: 38%;
+  width: 150px;
+}
+
+/* line 58, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree h3 {
+  padding: 1rem 0;
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+/* line 65, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: 150px;
+  border: 5px solid #252725;
+}
+
+/* line 74, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree .addStart {
+  border-radius: 40% 40% 10% 10%;
+  background-color: #cee4ce;
+}
+
+/* line 78, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree .addStart:hover {
+  background-color: #6bae6b;
+}
+
+/* line 81, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree .addEnd {
+  border-radius: 10% 10% 40% 40%;
+  background-color: #e2e2ff;
+}
+
+/* line 85, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .tree .addEnd:hover {
+  background-color: #afafff;
+}
+
+/* line 89, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .treeRemoveButtons {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* line 92, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .treeRemoveButtons h2 {
+  padding: 1rem 0;
+}
+
+/* line 95, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .treeRemoveButtons button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: fit-content;
+  border: 5px solid #252725;
+  background-color: #ffc3c3;
+  border-radius: 5%;
+  margin: auto;
+}
+
+/* line 106, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .treeRemoveButtons button:hover {
+  background-color: #ff9090;
+}
+
+/* line 110, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .manButt {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* line 113, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .manButt h2 {
+  padding: 1rem 0;
+}
+
+/* line 116, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .manButt button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: fit-content;
+  border: 5px solid #252725;
+  background-color: #dfc3ff;
+  border-radius: 5%;
+  margin: auto;
+}
+
+/* line 127, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .manButt button:hover {
+  background-color: #c490ff;
+}
+
+/* line 131, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .disTree {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* line 134, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .disTree h2 {
+  padding: 1rem 0;
+}
+
+/* line 137, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .disTree button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: fit-content;
+  border: 5px solid #252725;
+  background-color: #ccffcb;
+  border-radius: 5%;
+  margin: auto;
+}
+
+/* line 148, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeButtons .disTree button:hover {
+  background-color: #9aff98;
+}
+
+/* line 153, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeList {
+  flex-basis: 50%;
+}
+
+/* line 155, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeList .stickyDiv {
+  position: fixed;
+}
+
+/* line 158, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeList div#displayResults {
+  width: clamp(2rem, 30vw, 400px);
+  margin-top: 1rem;
+  height: 400px;
+  background-color: #fcf7dc;
+  padding: 2rem 3rem;
+  border-radius: 10%;
+}
+
+/* line 170, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeList #warning {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+/* line 175, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeList #error {
+  color: #681b1b;
+  font-weight: 900;
+  background-color: white;
+}
+
+/* line 180, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+main .buttonsListFlex .treeList img {
+  width: clamp(100px, 50%, 400px);
+  height: auto;
+  position: relative;
+  bottom: 25vh;
+  left: 5vw;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px grey;
+}
+
+/* line 193, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+footer {
+  margin-top: 15rem;
+  margin-bottom: 2rem;
+  font-size: .8rem;
+  color: grey;
+}
+
+/* line 198, ../../../OneDrive - Utah Valley University/UVU/Spring 2022/DGM 2760 Web Languages 1/dgm2760/05-Arborist/scss/_small.scss */
+footer .citedImages {
+  text-align: justify;
+  font-size: .5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

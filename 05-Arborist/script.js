@@ -97,7 +97,6 @@ document.querySelector('#sortTrees').onclick = () => {
 //Make lowercase
 document.querySelector('#lowerTrees').onclick = () => {
     const lowerList = trees.map(tree => tree.toLowerCase())
-    console.log(lowerList)
     listTrees(lowerList)
 }
 
@@ -115,6 +114,7 @@ document.querySelector('#showName1').onclick = () => {
         selectImage(trees, 0)
     } else {
         errorElement.textContent = 'Add More Trees!'
+        document.querySelector('.treeImg').innerHTML = ``
     }
 }
 document.querySelector('#showName2').onclick = () => {
@@ -122,6 +122,7 @@ document.querySelector('#showName2').onclick = () => {
         selectImage(trees, 1)
     } else {
         errorElement.textContent = 'Add More Trees!'
+        document.querySelector('.treeImg').innerHTML = ``
     }
 }
 document.querySelector('#showName3').onclick = () => {
@@ -129,6 +130,7 @@ document.querySelector('#showName3').onclick = () => {
         selectImage(trees, 2)
     } else {
         errorElement.textContent = 'Add More Trees!'
+        document.querySelector('.treeImg').innerHTML = ``
     }
 }
 document.querySelector('#showName4').onclick = () => {
@@ -136,6 +138,7 @@ document.querySelector('#showName4').onclick = () => {
         selectImage(trees, 3)
     } else {
         errorElement.textContent = 'Add More Trees!'
+        document.querySelector('.treeImg').innerHTML = ``
     }
 }
 document.querySelector('#showName5').onclick = () => {
@@ -143,6 +146,7 @@ document.querySelector('#showName5').onclick = () => {
         selectImage(trees, 4)
     } else {
         errorElement.textContent = 'Add More Trees!'
+        document.querySelector('.treeImg').innerHTML = ``
     }
 }
 

@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+// font-family: 'Major Mono Display', monospace;
+
+body {
+    font-family:'Urbanist', sans-serif;
+}
+header, main, footer, .treeList{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.headerWrapper {
+    background-color: rgb(37, 39, 37);
+    padding: 1rem;
+}
+header {
+    color: white;
+    padding: 1rem;
+    h1 {
+        font-family: 'Major Mono Display', monospace;
+        padding-bottom: .5rem;
+        border-bottom: 2px solid white;
+        width: 100%;
+    }
+    h2 {
+        padding-top: .3rem;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
+}
+
+main {
+    padding: 1rem;
+    h1 {
+        padding: 1rem 0;
+    }
+    .buttonsListFlex {
+        display: flex;
+        justify-content: space-between;
+        .treeButtons {
+            flex-basis: 50%;
+            .treeAddButtons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            .tree {
+                padding: 1rem;
+                .addButtons {
+                  background-color: rgb(31, 41, 31);
+                  border-radius: 38%;  
+                  width: 150px;
+                }
+                h3 {
+                    padding: 1rem 0;
+                    width: 150px;
+                    text-align: center;
+                    
+                    color: white;
+                }
+                button {
+                    font-family:'Urbanist', sans-serif;
+                    font-weight: 900;
+                    font-size: 1rem;
+                    padding: .8rem;
+                    width: 150px;
+                    border: 5px solid rgb(37, 39, 37); 
+         
+                }
+                .addStart {
+                        border-radius: 40% 40% 10% 10%;
+                        background-color: rgb(206, 228, 206);
+                    }
+                .addStart:hover {
+                    background-color: darken(rgb(206, 228, 206), 30%);
+                }
+                .addEnd {
+                        border-radius: 10% 10% 40% 40%;
+                        background-color: rgb(226, 226, 255);
+                }
+                .addEnd:hover {
+                    background-color: darken(rgb(226, 226, 255), 10%);
+                }
+            }
+            .treeRemoveButtons {
+                width: 100%;
+                padding: 1rem 0 ;
+                h2 {
+                    padding: 1rem 0 ;   
+                }
+                button {
+                    font-family:'Urbanist', sans-serif;
+                    font-weight: 900;
+                    font-size: 1rem;
+                    padding: .8rem;
+                    width: fit-content;
+                    border: 5px solid rgb(37, 39, 37);
+                    background-color: rgb(255, 195, 195);
+                    border-radius: 5%;
+                    margin: auto;
+                }
+                button:hover {
+                    background-color: darken(rgb(255, 195, 195), 10%);
+                }
+            }
+            .manButt {
+                width: 100%;
+                padding: 1rem 0 ;
+                h2 {
+                    padding: 1rem 0 ;   
+                }
+                button {
+                    font-family:'Urbanist', sans-serif;
+                    font-weight: 900;
+                    font-size: 1rem;
+                    padding: .8rem;
+                    width: fit-content;
+                    border: 5px solid rgb(37, 39, 37);
+                    background-color: rgb(223, 195, 255);
+                    border-radius: 5%;
+                    margin: auto;
+                }
+                button:hover {
+                    background-color: darken(rgb(223, 195, 255), 10%);
+                }
+            }
+            .disTree {
+                width: 100%;
+                padding: 1rem 0 ;
+                h2 {
+                    padding: 1rem 0 ;   
+                }
+                button {
+                    font-family:'Urbanist', sans-serif;
+                    font-weight: 900;
+                    font-size: 1rem;
+                    padding: .8rem;
+                    width: fit-content;
+                    border: 5px solid rgb(37, 39, 37);
+                    background-color: rgb(204, 255, 203);
+                    border-radius: 5%;
+                    margin: auto;
+                }
+                button:hover {
+                    background-color: darken(rgb(204, 255, 203), 10%);
+                }
+            }
+        }
+        .treeList {
+            flex-basis: 50%;
+            .stickyDiv {
+                position: fixed;
+            }
+            div#displayResults {
+                // position: sticky;
+                // top: 25%;
+                // right: 35vw;
+                // bottom: 10%;
+                width: clamp(2rem, 30vw, 400px);
+                margin-top: 1rem;
+                height: 400px;
+                background-color: rgb(252, 247, 220);
+                padding: 2rem 3rem;
+                border-radius: 10%;
+            }
+            #warning {
+               margin-top: 2rem;
+               margin-bottom: 1rem;
+               background-color: white;
+            }
+            #error {
+                color: rgb(104, 27, 27);
+                font-weight: 900;
+                background-color: white;
+            }
+            img {
+                width: clamp( 100px, 50%, 400px);
+                height: auto;
+                position: relative;
+                bottom: 25vh;
+                left: 5vw;
+                border-radius: 5%;
+                box-shadow: 2px 2px 2px grey;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    font-size: .8rem;
+    color: grey;
+    .citedImages {
+        text-align: justify;
+        font-size: .5rem;
+    }
+}
