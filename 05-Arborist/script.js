@@ -4,60 +4,129 @@ const errorElement = document.querySelector('#error')
 const displayResults = document.querySelector('#displayResults')
 
 // Display the list of treess inside the displayResults div
+/* const treeListArray = []
+treeListArray.forEach(tree => {
+    if (!treeListArray.includes(tree)) {
+         treeListArray.push(tree)
+    } else {
+        errorElement.textContent = 'You already added that tree!'
+    }
+}) */
 function listTrees(tl) {
     let treeList = ''
+    // let treeListArray = []
+    /* tl.forEach(tree => {
+        if (!treeListArray.includes(tree)) {
+             treeListArray.push(tree)
+        } else {
+            errorElement.textContent = 'You already added that tree!'
+        }
+    }) */
     tl.forEach(tree => {
-        treeList += `${tree} <br>`
+             treeList += `${tree} <br>`
     })
+    
     displayResults.innerHTML = `${treeList} <span>${tl.length} elements long</span>`
-    if (tl.length === 0) { //error handling when all the trees are removed
+    if (tl.length === 0) { //
         errorElement.textContent = 'No trees on list, get planting!'
-    } else { errorElement.textContent = '' }
-
+    } else if(tl.length === 5) {
+        setTimeout(() => { errorElement.textContent = ``; }, 2000) //Makes the adding trees warning not stick on the page
+    }
 }
 listTrees(trees)
 
 //Add trees to start
 document.querySelector('#green_ash1').onclick = () => {
-    trees.unshift('Green Ash')
+    errorElement.textContent = ''
+    if (!trees.includes('Green Ash')) {
+        trees.unshift('Green Ash')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
+    // trees.unshift('Green Ash')
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#b_e_maple1').onclick = () => {
-    trees.unshift('Box Elder Maple')
+    errorElement.textContent = ''
+    if (!trees.includes('Box Elder Maple')) {
+        trees.unshift('Box Elder Maple')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#l_pine1').onclick = () => {
-    trees.unshift('Lodgepole Pine')
+    errorElement.textContent = ''
+    if (!trees.includes('Lodgepole Pine')) {
+        trees.unshift('Lodgepole Pine')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#r_m_juniper1').onclick = () => {
-    trees.unshift('Rocky Mountain Juniper')
+    errorElement.textContent = ''
+    if (!trees.includes('Rocky Mountain Juniper')) {
+        trees.unshift('Rocky Mountain Juniper')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#q_aspen1').onclick = () => {
-    trees.unshift('Quaking Aspen')
+    errorElement.textContent = ''
+    if (!trees.includes('Quaking Aspen')) {
+        trees.unshift('Quaking Aspen')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 
 //Add trees to end
 document.querySelector('#green_ash2').onclick = () => {
-    trees.push('Green Ash')
+    errorElement.textContent = ''
+    if (!trees.includes('Green Ash')) {
+        trees.push('Green Ash')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#b_e_maple2').onclick = () => {
-    trees.push('Box Elder Maple')
+    errorElement.textContent = ''
+    if (!trees.includes('Box Elder Maple')) {
+        trees.push('Box Elder Maple')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#l_pine2').onclick = () => {
-    trees.push('Lodgepole Pine')
+    errorElement.textContent = ''
+    if (!trees.includes('Lodgepole Pine')) {
+        trees.push('Lodgepole Pine')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#r_m_juniper2').onclick = () => {
-    trees.push('Rocky Mountain Juniper')
+    errorElement.textContent = ''
+    if (!trees.includes('Rocky Mountain Juniper')) {
+        trees.push('Rocky Mountain Juniper')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 document.querySelector('#q_aspen2').onclick = () => {
-    trees.push('Quaking Aspen')
+    errorElement.textContent = ''
+    if (!trees.includes('Quaking Aspen')) {
+        trees.push('Quaking Aspen')
+   } else {
+       errorElement.textContent = 'You already added that tree!'
+   }
     listTrees(trees) //calling when it loads, and calling it when it pushes and adds trees. Option shift A for block comments
 }
 
