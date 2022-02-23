@@ -19,3 +19,5 @@ console.log('working button')
 
 //noun0 to uppercase
 //noun2 needs plural
+//splice the arrays so theres no more than 3 per array
+//create error message when someone inputs more than three words, or inputs other characters
