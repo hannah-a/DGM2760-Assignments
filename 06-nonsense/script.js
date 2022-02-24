@@ -10,7 +10,8 @@ const verbsString = document.querySelector('#verbs').value
 const adjString = document.querySelector('#adjectives').value 
 console.log(nounsString, verbsString, adjString)
 
-
+//replace space with enters
+//split string on enters
 
 // const myStory = `Once upon a time in ${noun[0]}, the Minister of Health decreed that every ${noun[1]} would be confiscated. This is due to the fact that ${adjective[0]} ${noun[2]} ${verb[0]} in the park fountains. No one liked this new decree so they decided to ${verb[1]} the ${adjective[1]} Minister of Health. Watching him ${verb[2]} in the ${adjective[2]} was the funniest thing to ever happen. The End`
 console.log('working button')
