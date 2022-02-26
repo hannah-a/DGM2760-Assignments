@@ -1,2 +1,69 @@
-/* font-family: 'Gentium Basic', serif;
-font-family: 'IM Fell English SC', serif; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+  font-family: 'Gentium Basic', serif;  
+}
+body {
+    max-width: 500px;
+    margin: auto;
+    
+}
+header {
+    margin: 3rem 0 1rem 0;
+    h1 {
+        font-family: 'Ruthie', cursive;
+        text-align: center;
+        font-size: clamp( 2.5rem, 10vw, 5rem);
+    }
+}
+main {
+    background-image: url(/06-nonsense/images/town.jpg);
+    background-size: auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.inputs {
+    padding: 1rem;
+    div.box {
+        padding: .5rem 0; 
+    }
+    textarea {
+            display: block;
+            width: 100%;
+            border:none;
+            font-family: 'Gentium Basic', serif;
+            font-size: 1.5rem;
+        }
+        textarea:focus {
+            background-color: rgb(236, 236, 255);
+        }
+}
+button {
+    font-family: 'Ruthie', cursive;
+    font-size: 2rem;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+}
+.story {
+    display: none;
+}
+.open {
+    display: block;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.877);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+} 
+footer {
+    max-width: 500px;
+    text-align: center;
+    margin: 1rem;
+    color: grey;
+}

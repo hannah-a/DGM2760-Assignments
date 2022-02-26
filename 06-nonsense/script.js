@@ -1,8 +1,11 @@
+const storyDiv = document.querySelector('.story')
+
 const button = document.querySelector('#createButton').addEventListener('click', (e) => {
     e.stopPropagation() //stops the event handler from bubbling to the parent elements
+    storyDiv.classList.toggle('open')
     tellStory()
 })
-
+  // 
 function tellStory() {
 
     const nounsString = document.querySelector('#nouns').value
@@ -11,7 +14,8 @@ function tellStory() {
 
     //function to make the string into an array with only 3 values and no white space
     function makeArray(string) {
-        return string.toLowerCase().trim().split(/\s+/, 3)
+        const removeCommas = string.replace(/,/g, '')
+        return removeCommas.toLowerCase().trim().split(/\s+/, 3)
     }
 
     const nounArray = makeArray(nounsString)
@@ -19,10 +23,43 @@ function tellStory() {
     const adjArray = makeArray(adjString)
     // console.log(nounArray, verbArray, adjArray)
 
+
+    //replaces missing words with default
+
     //template literal to create the story using the array indexes
     const myStory = `Once upon a time in ${nounArray[0]}, the Minister of Health decreed that every ${adjArray[2]} ${nounArray[1]} would be confiscated. This is due to the fact that ${adjArray[0]} ${nounArray[2]}s ${verbArray[0]} in the park fountains. No one liked this new decree so they decided to ${verbArray[1]} the ${adjArray[1]} Minister of Health. Watching him ${verbArray[2]} in the fountain was the funniest thing to ever happen. The End.`
     //display story in div
-    const storyDiv = document.querySelector('.story').textContent = myStory
+
+    if (nounArray[0] == null || 'undefined') {
+        nounArray[0] = 'France'
+    }
+    if (nounArray[1] == null || 'undefined') {
+        nounArray[1] = 'inflatable pool toy'
+    }
+    if (nounArray[2] == null || 'undefined') {
+        nounArray[2] = 'boy'
+    }
+    if (verbArray[0] == null || 'undefined') {
+        verbArray[0] = 'play'
+    }
+    if (verbArray[1] == null || 'undefined') {
+        verbArray[1] = 'dunk'
+    }
+    if (verbArray[2] == null || 'undefined') {
+        verbArray[2] = 'flounder'
+    }
+    if (adjArray[0] == null || 'undefined') {
+        adjArray[0] = 'silly'
+    }
+    if (adjArray[1] == null || 'undefined') {
+        adjArray[1] = 'stuffy'
+    }
+    if (adjArray[2] == null || 'undefined') {
+        adjArray[2] = 'unicorn'
+    }
+
+
+    storyDiv.textContent = myStory
 }
 
 
