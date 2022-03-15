@@ -22,7 +22,6 @@ function tellStory() {
     const nounArray = makeArray(nounsString)
     const verbArray = makeArray(verbsString)
     const adjArray = makeArray(adjString)
-    console.log(nounArray, verbArray, adjArray)
 
 
     //replaces missing words with default
