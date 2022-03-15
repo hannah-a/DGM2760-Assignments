@@ -4,11 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet" type="css/text">
     <title>Pizza Emporium</title>
 </head>
 <body>
-   
-    <script src="/script.js"></script>
+  <header class="header">
+      <h1 class="header__title">Pizza Emporium</h1>
+  </header> 
+  <main class="main">
+      <div class="main__orderForm">
+          <h2 class="main__orderTitle">Order Form</h2>
+          <div class="main__crustDiv">
+            <h2 class="main__subTitle">
+                Crust
+            </h2>
+            <input class="main__inputRadio" type="radio" id="crust" value="crust" name="crust">
+            <label for="crust">Thin</label>
+            <input class="main__inputRadio" type="radio" id="stuffed" value="stuffed" name="crust">
+            <label for="stuffed">Stuffed</label>
+            <input class="main__inputRadio" type="radio" id="normal" value="normal" name="crust" checked>
+            <label for="normal">Normal</label>
+          </div>
+          <div class="main__toppingDiv">
+            <h2 class="main__subTitle">
+                Toppings
+            </h2>
+            <input class=" main__inputChecked" type="radio" id="olives" value="olives" name="toppings">
+            <label for="olives">Olives</label>
+            <input class="main__inputChecked" type="radio" id="pepperoni" value="pepperoni" name="toppings">
+            <label for="pepperoni">Pepperoni</label>
+            <input class="main__inputChecked" type="radio" id="anchovies" value="anchovies" name="toppings" checked>
+            <label for="anchovies">Anchovies</label>
+          </div>
+          <div class="main__sizeDiv">
+            <h2 class="main__subTitle">
+                Size
+            </h2>
+            <input class="main__inputRadio" type="radio" id="small" value="small" name="size">
+            <label for="small">Small</label>
+            <input class="main__inputRadio" type="radio" id="medium" value="medium" name="size">
+            <label for="medium">Medium</label>
+            <input class="main__inputRadio" type="radio" id="large" value="large" name="size" checked>
+            <label for="large">Large</label>
+          </div>
+          <div class="main__buildDiv">
+              <button class="main__buildButton">
+                Build Pizza
+              </button>
+          </div>
+          <div class="main__shoppingDiv">
+
+          </div>
+      </div>
+  </main>  
+  <footer class="footer">
+      <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+  </footer>
+    <script src="/07-pizza/script.js" ></script>
 </body>
 </html>
