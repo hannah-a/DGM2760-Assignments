@@ -13,3 +13,5 @@
 [The Utah Arborist](https://dgm2760hannah-a.netlify.app/05-arborist/index.html)
 
 [The Nonsense Story](https://dgm2760hannah-a.netlify.app/06-nonsense/index.html)
+
+[Pizza Emporium](https://dgm2760hannah-a.netlify.app/07-pizza/index.html)
