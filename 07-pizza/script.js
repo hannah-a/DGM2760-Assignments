@@ -6,7 +6,7 @@ const pizza = {
     topping: [],
     buildPizza() {
         console.log('buildPizza has been called')
-        message = `Baking a pizza on a ${pizza.size} ${pizza.crust} with ${pizza.topping}s.`
+        message = `Baking a ${pizza.size} pizza on a ${pizza.crust} crust with ${pizza.topping}.`
         document.querySelector('.main__feedbackParagraph').textContent = message
     },
     shoppingList() { 

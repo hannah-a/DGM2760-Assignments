@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles.css" rel="stylesheet" type="css/text">
+    <link href="/07-pizza/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">  
     <title>Pizza Emporium</title>
 </head>
-<body>
+<body class="body">
   <header class="header">
       <h1 class="header__title">Pizza Emporium</h1>
   </header> 
   <main class="main">
       <div class="main__orderForm">
           <h2 class="main__orderTitle">Order Form</h2>
-          <div class="main__crustDiv">
+          <div class="main__secDiv">
             <h2 class="main__subTitle">
                 Crust
             </h2>
@@ -27,7 +30,7 @@
             <input class="main__inputRadio" type="radio" id="normal" value="normal" name="crust">
             <label for="normal">Normal</label>
           </div>
-          <div class="main__toppingDiv">
+          <div class="main__secDiv">
             <h2 class="main__subTitle">
                 Toppings
             </h2>
@@ -44,7 +47,7 @@
             <input class="main__inputChecked" type="checkbox" id="pineapple" value="pineapple" name="toppings">
             <label for="pineapple">Pineapple</label>
           </div>
-          <div class="main__sizeDiv">
+          <div class="main__secDiv">
             <h2 class="main__subTitle">
                 Size
             </h2>
@@ -55,17 +58,17 @@
             <input class="main__inputRadio" type="radio" id="large" value="large" name="size">
             <label for="large">Large</label>
           </div>
-          <div class="main__buildDiv">
-              <button class="main__buildButton">
+          <div class="main__buildDiv main__bDiv">
+              <button class="main__buildButton main__Button">
                 Build Pizza
               </button>
           </div>
-          <div class="main__shoppingDiv">
-            <button class="main__shoppingButton">
+          <div class="main__shoppingDiv main__bDiv">
+            <button class="main__shoppingButton main__Button">
               Shopping List
             </button>
           </div>
-          <div class="main__feedbackDiv">
+          <div class="main__feedbackDiv main__bDiv">
             <p class="main__feedbackParagraph">
               
             </p>
@@ -74,6 +77,7 @@
   </main>  
   <footer class="footer">
       <p>&copy;2022 by Hannah Armstrong for Educational Purposes</p>
+      <p>Image by <a href="https://pixabay.com/users/designdrawartes-8580564/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4968645">DesignDraw DesignDrawArtes</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4968645">Pixabay</a></p>
   </footer>
     <script src="/07-pizza/script.js" ></script>
 </body>
