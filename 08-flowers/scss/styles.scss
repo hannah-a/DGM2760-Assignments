@@ -1,9 +1,75 @@
-@import "small";
-
-@media only screen and (min-width: 35rem) {
-    @import "medium";
+// font-family: 'Kranky', cursive;
+// font-family: 'Miltonian', cursive;
+// font-family: 'Sacramento', cursive;
+// font-family: 'Shizuru', cursive;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
+.body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+}
+.main__stem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-@media only screen and (min-width: 75rem) {
-    @import "large";
+    margin: 4rem 0 2rem 0;
+    height: 300px;
+    background-color: pink;
+
+    text-align: center;
+
+    font-size: 3rem;
+
+}
+.main__buttonFlex {
+    display: flex;
+    justify-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    height: 80vh;
+    
+    background-image: url('/08-flowers/images/flowers.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-size: 3vw;
+    text-align: center;
+    .main__button-1 {
+        font-family: 'Kranky', cursive;
+        flex-basis: 20%;
+        font-size: 2.5vw;
+    }
+    .main__button-2 {
+        font-family: 'Shizuru', cursive;
+        flex-basis: 25%;
+    }
+    .main__button-3 {
+        font-family: 'Sacramento', cursive;
+        flex-basis: 20%;
+    }
+    .main__button-4 {
+        font-family: 'Miltonian', cursive;
+        flex-basis: 35%;
+        font-size: 3.5vw
+    }
+}
+.main__feedback {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        margin: 4rem 0 2rem 0;
+        height: 300px;
+        background-color: pink;
+    
+        text-align: center;
+    
+        font-size: 3rem;
+}
+.footer {
+    text-align: center;
 }
