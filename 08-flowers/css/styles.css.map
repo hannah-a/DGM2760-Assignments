@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/styles.scss",
+        "../scss/_small.scss",
+        "../scss/_medium.scss",
+        "../scss/_large.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

@@ -1,0 +1,252 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+}
+
+header, main, footer, .treeList {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  background-color: #252725;
+  padding: 1rem;
+}
+
+header {
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: 'Major Mono Display', monospace;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+header h2 {
+  padding-top: .3rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+main h1 {
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .buttonsListFlex .treeButtons {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .buttonsListFlex .treeButtons .treeAddButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .buttonsListFlex .treeButtons .tree {
+  padding: 1rem;
+}
+
+main .buttonsListFlex .treeButtons .tree .addButtons {
+  background-color: #1f291f;
+  border-radius: 38%;
+  width: 150px;
+}
+
+main .buttonsListFlex .treeButtons .tree h3 {
+  padding: 1rem 0;
+  width: 150px;
+  text-align: center;
+  color: white;
+}
+
+main .buttonsListFlex .treeButtons .tree button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: 150px;
+  border: 5px solid #252725;
+}
+
+main .buttonsListFlex .treeButtons .tree .addStart {
+  border-radius: 40% 40% 10% 10%;
+  background-color: #cee4ce;
+}
+
+main .buttonsListFlex .treeButtons .tree .addStart:hover {
+  background-color: #6bae6b;
+}
+
+main .buttonsListFlex .treeButtons .tree .addEnd {
+  border-radius: 10% 10% 40% 40%;
+  background-color: #e2e2ff;
+}
+
+main .buttonsListFlex .treeButtons .tree .addEnd:hover {
+  background-color: #afafff;
+}
+
+main .buttonsListFlex .treeButtons .treeRemoveButtons {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex .treeButtons .treeRemoveButtons h2 {
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex .treeButtons .treeRemoveButtons button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid #252725;
+  background-color: #ffc3c3;
+  border-radius: 5%;
+  margin: auto;
+}
+
+main .buttonsListFlex .treeButtons .treeRemoveButtons button:hover {
+  background-color: #ff9090;
+}
+
+main .buttonsListFlex .treeButtons .manButt {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex .treeButtons .manButt h2 {
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex .treeButtons .manButt button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid #252725;
+  background-color: #dfc3ff;
+  border-radius: 5%;
+  margin: auto;
+}
+
+main .buttonsListFlex .treeButtons .manButt button:hover {
+  background-color: #c490ff;
+}
+
+main .buttonsListFlex .treeButtons .disTree {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex .treeButtons .disTree h2 {
+  padding: 1rem 0;
+}
+
+main .buttonsListFlex .treeButtons .disTree button {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: .8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid #252725;
+  background-color: #ccffcb;
+  border-radius: 5%;
+  margin: auto;
+}
+
+main .buttonsListFlex .treeButtons .disTree button:hover {
+  background-color: #9aff98;
+}
+
+main .buttonsListFlex .treeList {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+main .buttonsListFlex .treeList .stickyDiv {
+  position: fixed;
+}
+
+main .buttonsListFlex .treeList div#displayResults {
+  width: clamp(2rem, 30vw, 400px);
+  margin-top: 1rem;
+  height: 400px;
+  background-color: #fcf7dc;
+  padding: 2rem 3rem;
+  border-radius: 10%;
+}
+
+main .buttonsListFlex .treeList #warning {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+main .buttonsListFlex .treeList #error {
+  color: #681b1b;
+  font-weight: 900;
+  background-color: white;
+}
+
+main .buttonsListFlex .treeList img {
+  width: clamp(100px, 50%, 400px);
+  height: auto;
+  position: relative;
+  bottom: 25vh;
+  left: 5vw;
+  border-radius: 5%;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
+}
+
+footer {
+  margin-top: 15rem;
+  margin-bottom: 2rem;
+  font-size: .8rem;
+  color: grey;
+}
+
+footer .citedImages {
+  text-align: justify;
+  font-size: .5rem;
+}
+/*# sourceMappingURL=styles.css.map */

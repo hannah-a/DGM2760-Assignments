@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.body {
+  max-width: 65rem;
+  margin: 0 auto;
+  background-color: #111111;
+  color: white;
+  font-family: 'PT Serif', serif;
+}
+
+@media only screen and (min-width: 1250px) {
+  .body {
+    background-image: url("/07-pizza/images/pizza-4968645.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 1249px) {
+  .body {
+    background-image: url("/07-pizza/images/pizza-4952534.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.header {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.397);
+  font-size: 2rem;
+  font-family: 'Inspiration', cursive;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.main__orderTitle {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid grey;
+}
+
+.main__secDiv {
+  padding: 1rem 0;
+}
+
+.main__subTitle {
+  padding-bottom: .5rem;
+}
+
+.main__Button {
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  font-family: 'PT Serif', serif;
+  font-weight: 800;
+}
+
+.main__bDiv {
+  padding: 1rem 0;
+}
+
+.main__feedbackParagraph {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.938);
+  border-radius: 1rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.397);
+  color: #e6e6e6;
+  font-size: .8rem;
+  text-align: right;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #cecece;
+}
+/*# sourceMappingURL=styles.css.map */
