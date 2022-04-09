@@ -1,0 +1,20 @@
+/* font-family: 'Monsieur La Doulaise', cursive;
+font-family: 'Petit Formal Script', cursive; */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Petit Formal Script', cursive;
+    background-color: rgb(249, 247, 250);
+}
+.landingPage {
+    height: 100vh;
+
+    background-image: url(/10-hotel/images/hotel-1640201.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top top;
+}
