@@ -18,17 +18,18 @@ getHotelData().then(data => {
 
 const buttonsAll = document.querySelectorAll('.buttonDiv__button')
 buttonsAll.forEach(button => {
-  button.addEventListener('click', () => {
-    window.scroll({
-      left: 0,
-      top: 700,
-      behavior: 'smooth'})
-    hotelInfo})
+  button.addEventListener('click',hotelInfo)
 })
 
 
+  
 
 function hotelInfo(event) {
+  window.scroll({
+    left: 0,
+    top: 700,
+    behavior: 'smooth'})
+    
  let hotelChoice = hotelData.hotels.find(hotel => {
  return event.target.id === hotel.id
  })
