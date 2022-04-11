@@ -1,31 +1,34 @@
 {
     "hotels": [
-        {
+        {   
+            "id": "button__estate",
             "name": "Earendel Estate",
             "rooms": "500",
             "gym": "Yes",
-            "pool": ["Sun Pool", "Lap Pool", "Steam Spa"],
-            "roomtypes": ["King", "Queen", "Princess"],
+            "pool": ["Sun Pool", " Lap Pool", " Steam Spa"],
+            "roomtypes": ["King", " Queen", " Princess"],
             "breakfast": "Yes",
             "address": "6899 Balestrand, Norway",
             "picture": "arendelle.webp"
         },
         {
+            "id": "button__green",
             "name": "Green Tortoise Hostel",
             "rooms": "50",
             "gym": "No",
             "pool": "No",
-            "roomtypes": ["Private", "Shared Womens", "Shared Mens", "Couples"],
+            "roomtypes": ["Private", " Shared Womens", " Shared Mens", "Couples"],
             "breakfast": "Yes",
             "address": "105 Pike St, Seattle, WA 98101",
             "picture": "green.jpg"
         },
         {
+            "id": "button__blueBonnet",
             "name": "Blue Bonnet B&B",
             "rooms": "8",
             "gym": "No",
             "pool": "No",
-            "roomtypes": ["King", "Queen", "Double"],
+            "roomtypes": ["King", " Queen", " Double"],
             "breakfast": "No",
             "address": "804 N Lincoln St, Fredericksburg, TX 78624",
             "picture": "bluebonnet.jpg"

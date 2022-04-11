@@ -50,7 +50,7 @@ font-family: 'Petit Formal Script', cursive; */
 }
 .buttonDiv__button {
     margin: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
 
     border: none;
     border-radius: 40px;
@@ -71,6 +71,8 @@ font-family: 'Petit Formal Script', cursive; */
     "display info";
     grid-template-columns: 50% 50%;
     grid-template-rows: 60vh;
+
+    margin-bottom: 6rem;
 }
 .main__nameImageAddressDiv {
     display: grid;
@@ -79,6 +81,10 @@ font-family: 'Petit Formal Script', cursive; */
     "image"
     "address";
     grid-template-rows: 20% 60% 20%;
+    align-items: center;
+    object-fit: contain;
+    min-width: 0;
+    min-height: 0;
 }
 .main__amnListBookDiv {
     display: grid;
@@ -87,32 +93,59 @@ font-family: 'Petit Formal Script', cursive; */
     "list"
     "booknow";
     grid-template-rows: 20% 60% 20%;
+    align-items: center;
 }
 
 /*nameImageAddressDiv */
 .main__nameDiv {
-    background-color:rgb(226, 226, 226);
-}
-.main__addressDiv {
+    padding: 1rem;
+
+    background-color: rgba(255, 255, 255, 0.836);
     
+    font-weight: 600;
+    color: black;
 }
+/* .main__figure {
+    min-width: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.main__figureImage {
+    max-width: 100%;
+    min-width: 0;
+} */
+.main__addressDiv {
+    padding: .7rem;
 
-
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
 /*amnListBookDiv */
 .main__amnTitleDiv {
-    background-color:rgb(226, 226, 226);
+    padding-left: 1rem;
+}
+.main__amnListBookDiv {
+    padding-left: 1rem;
+
+    line-height: 180%;
+    font-weight: 600;
 }
 .main__bookButton {
-    padding: 2rem;
+    margin: .5rem;
+    padding: .8rem;
 
     border: none;
     border-radius: 40px;
-    background-color: rgba(255, 255, 255, 0.849);
+    background-color: rgba(224, 167, 167, 0.849);
 
     font-family: 'Petit Formal Script', cursive;
     font-size: 1rem;
     font-weight: 600;
 }
+.main__bookButton:hover {
+    background-color: rgb(175, 92, 92);
+}
+
 
 /*Footer*/
 .footer {
