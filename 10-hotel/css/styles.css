@@ -10,11 +10,30 @@ font-family: 'Petit Formal Script', cursive; */
     font-family: 'Petit Formal Script', cursive;
     background-color: rgb(249, 247, 250);
 }
+
 .landingPage {
     height: 100vh;
 
     background-image: url(/10-hotel/images/hotel-1640201.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top top;
+    background-position: top center;
 }
+
+/*Company Logo*/
+.header {
+    height: 50vh;
+}
+.header__h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/*Hotel buttons*/
+.landingPage__buttonDiv {
+   text-align: center;
+}
+
+
+/*Hotel Info*/
