@@ -9,6 +9,7 @@ font-family: 'Petit Formal Script', cursive; */
 .body {
     font-family: 'Petit Formal Script', cursive;
     background-color: rgb(249, 247, 250);
+    
 }
 
 @keyframes blur {

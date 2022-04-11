@@ -18,10 +18,13 @@ getHotelData().then(data => {
 
 const buttonsAll = document.querySelectorAll('.buttonDiv__button')
 buttonsAll.forEach(button => {
-  button.addEventListener('click', hotelInfo)
+  button.addEventListener('click', () => {
+    window.scroll({
+      left: 0,
+      top: 700,
+      behavior: 'smooth'})
+    hotelInfo})
 })
-
-console.log(buttonsAll)
 
 
 
