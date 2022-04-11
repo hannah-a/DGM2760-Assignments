@@ -20,4 +20,4 @@
 
 [Truck Shop](https://dgm2760hannah-a.netlify.app/09-truck/index.html)
 
-[Hannah Hotels]()
+[Hannah Hotels](https://dgm2760hannah-a.netlify.app/10-hotel/index.html)
