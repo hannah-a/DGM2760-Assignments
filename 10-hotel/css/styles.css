@@ -11,6 +11,11 @@ font-family: 'Petit Formal Script', cursive; */
     background-color: rgb(249, 247, 250);
 }
 
+@keyframes blur {
+     from {filter: blur(5px);}
+     to {filter: blur(0px);}
+}
+
 .landingPage {
     height: 100vh;
 
@@ -18,7 +23,10 @@ font-family: 'Petit Formal Script', cursive; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+
+    animation: blur 2s;
 }
+
 
 /*Company Logo*/
 .header {
@@ -28,12 +36,91 @@ font-family: 'Petit Formal Script', cursive; */
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 100%;
+
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 6rem;
+    
+    text-shadow: -15px 15px 20px white;
 }
 /*Hotel buttons*/
 .landingPage__buttonDiv {
    text-align: center;
 }
+.buttonDiv__button {
+    margin: 1rem;
+    padding: 2rem;
 
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.849);
+
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.buttonDiv__button:hover {
+    background-color: white;
+}
 
 /*Hotel Info*/
+.main {
+    display: grid;
+    grid-template-areas:
+    "display info";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60vh;
+}
+.main__nameImageAddressDiv {
+    display: grid;
+    grid-template-areas:
+    "name"
+    "image"
+    "address";
+    grid-template-rows: 20% 60% 20%;
+}
+.main__amnListBookDiv {
+    display: grid;
+    grid-template-areas:
+    "amentities"
+    "list"
+    "booknow";
+    grid-template-rows: 20% 60% 20%;
+}
+
+/*nameImageAddressDiv */
+.main__nameDiv {
+    background-color:rgb(226, 226, 226);
+}
+.main__addressDiv {
+    
+}
+
+
+/*amnListBookDiv */
+.main__amnTitleDiv {
+    background-color:rgb(226, 226, 226);
+}
+.main__bookButton {
+    padding: 2rem;
+
+    border: none;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.849);
+
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*Footer*/
+.footer {
+    padding: 1rem;
+
+    background-color: rgb(226, 226, 226);
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: .8rem;
+    text-align: center;
+}
