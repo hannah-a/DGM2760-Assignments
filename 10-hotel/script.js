@@ -23,8 +23,7 @@ buttonsAll.forEach(button => {
 
 console.log(buttonsAll)
 
-document.querySelector('#button__estate').addEventListener('click', hotelInfo) //no parenthesis because you're not calling the function, your passing it as a parameter
-//functions are first class objects that can be passed around
+
 
 function hotelInfo(event) {
  let hotelChoice = hotelData.hotels.find(hotel => {
