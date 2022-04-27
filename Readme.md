@@ -21,3 +21,5 @@
 [Truck Shop](https://dgm2760hannah-a.netlify.app/09-truck/index.html)
 
 [Hannah Hotels](https://dgm2760hannah-a.netlify.app/10-hotel/index.html)
+
+[UtahDailyBills](https://dgm2760hannah-a.netlify.app/10-hotel/index.html)
