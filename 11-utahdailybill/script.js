@@ -17,26 +17,28 @@ async function getMasterList() {
       console.error(error) //passing the error object to .error
     }
 }
-let masterListData = {}
+let masterListData = {} //list of bills
 getMasterList().then(data => {
-    delete data.masterlist.session
-    masterListData = data.masterlist //returns an empty object but takes longer because its asynchronous
+    delete data.masterlist.session //deletes the session object from the list of bills
+    masterListData = data.masterlist 
     console.log(masterListData)
     console.log(masterListData[22].status)
     for(const [key, value] of Object.entries(masterListData)) {
-       const bill = document.createElement('h1')
-       bill.textContent = key
-       prefiledDiv.appendChild(bill)
-       var myWindow = window.open("")
+       const bill = new Bill(value.bill_id)
+       console.log(bill)
     }
 })
 
+//class to get detailed bill information 
+class Bill {
+    constructor(bill_id) {
+        this.bill_id = bill_id,
+        function getBillData() { //method to fetch the getBill API 
+            return fetch(`https://api.legiscan.com/?key=d5c197df7f4d28c4c21bf867cad37a56&op=getBill&id=${this.bill_id}`)
+        }
+    }
+}    
 
-
-
-
-
-  
     // for(const [key, value] of Object.entries(billList[masterlist])) {
     //     console.log(`${key}, ${value}`)
     //     for(key of bill) {
