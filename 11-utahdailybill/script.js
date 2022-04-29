@@ -1,5 +1,3 @@
-
-
 const prefiledDiv = document.querySelector(".main__prefiled");
 const introducedDiv = document.querySelector(".main__introduced");
 const engrossedDiv = document.querySelector(".main__engrossed");
@@ -8,41 +6,94 @@ const passedDiv = document.querySelector(".main__passed");
 const vetoedDiv = document.querySelector(".main__vetoed");
 const failedDiv = document.querySelector(".main__failed");
 
-let masterListData = {}//list of bills
+let masterListData = {}; //list of bills
 let oldMasterData = localStorage.getItem("masterListData"); //first variable to check if its in storage
 async function getMasterList() {
-    try {
-      const response = await fetch("./data/masterlist.json");
-      return await response.json(); //Return the JSON object
-    } catch (error) {
-      console.error(error); //passing the error object to .error
-    }
+  try {
+    const response = await fetch("./data/masterlist.json");
+    return await response.json(); //Return the JSON object
+  } catch (error) {
+    console.error(error); //passing the error object to .error
+  }
 }
 if (oldMasterData) {
   console.log("You have old data");
 } else {
-  console.log('MasterDataList cached')
-  getMasterList().then((data) => {
-    delete data.masterlist.session  
-    masterListData = data.masterlist
-    let masterStringData = JSON.stringify(masterListData);
-    localStorage.setItem("masterListData", masterStringData);
-  }).catch(function (error) {
-        console.warn(error)
+  console.log("MasterDataList cached");
+  getMasterList()
+    .then((data) => {
+      delete data.masterlist.session;
+      masterListData = data.masterlist;
+      let masterStringData = JSON.stringify(masterListData);
+      localStorage.setItem("masterListData", masterStringData);
     })
+    .catch(function (error) {
+      console.warn(error);
+    });
 }
 
-let billsData = {}
+let billsData = {};
 function makeBills() {
   const parsedMasterListData = JSON.parse(
     localStorage.getItem("masterListData") //second variable to use as parsed data
   );
 
   for (const [key, value] of Object.entries(parsedMasterListData)) {
-   
-  }
-};
+    function makeBill() {
+      const billDiv = document.createElement("div");
+      const billTitle = document.createElement("h2");
+      const billNumber = document.createElement("h3")
+      const billStatus = document.createElement("h4")
+      const billStatusDate = document.createElement("h5")
+    
+      billTitle.textContent = value.title
+      billNumber.textContent = value.number
+      billStatus.textContent = value.status
+      billStatusDate.textContent = value.status_date
 
+      billDiv.appendChild(billTitle)
+      billDiv.appendChild(billNumber)
+      billDiv.appendChild(billStatus)
+      billDiv.appendChild(billStatusDate)
+      
+      billDiv.addEventListener('click', () => {
+          billClick(value.number)
+          })
+      return billDiv
+    }
+    switch (value.status) {
+      case 0: {
+        prefiledDiv.appendChild(makeBill())
+        break;
+      }
+      case 1: {
+        introducedDiv.appendChild(makeBill())
+        break;
+      }
+      case 2: {
+        engrossedDiv.appendChild(makeBill())
+        break;
+      }
+      case 3: {
+        enrolledDiv.appendChild(makeBill())
+        break;
+      }
+      case 4: {
+        passedDiv.appendChild(makeBill())
+        break;
+      }
+      case 5: {
+        vetoedDiv.appendChild(makeBill())
+        break;
+      }
+      case 6: {
+        failedDiv.appendChild(makeBill())
+        break;
+      }
+    }
+  }
+}
+makeBills()
 //event listener on billDiv needs to run function that takes the reduced rollcall id's, gets the data and then takes the user to another page to display the data of the members list. So if I make that a seperate api call and function then i can pass in the roll_call_id's I need into it so I'm going to need to reduce the roll calls for every bill so that I can get those pass those two id's into the new function call.
 
 //localStorage.getItem()
@@ -94,80 +145,37 @@ class Bill {
   }
 }
 
-
 //to make each bill on click
-// async function getBillData() {
-//     console.log("fetch is working");
-//     try {
-//       const response = await fetch(`./data/UT/bill/${value.number}.json`); //fetch the getBill API
-//       return await response.json();
-//     } catch (error) {
-//       console.error(error); //passing the error object to .error
-//     }
-//   }
-//   getBillData().then((billData) => {
-//     const billDiv = document.createElement("div");
-//     const bill = new Bill(
-//       billData.bill.bill_id,
-//       billData.bill.bill_type,
-//       billData.bill.title,
-//       billData.bill.bill_number,
-//       billData.bill.description,
-//       billData.bill.committee,
-//       billData.bill.status,
-//       billData.bill.status_date,
-//       billData.bill.body,
-//       billData.bill.state_link,
-//       billData.bill.subjects,
-//       billData.bill.sponsors,
-//       billData.bill.votes
-//     );
-//     console.log(bill)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function billClick(number){
+    async function getBillData() {
+        console.log("fetch is working");
+        try {
+        const response = await fetch(`/11-utahdailybill/data/UT/2022-2022_General_Session/bill/${number}.json`); //fetch the getBill API
+        return await response.json();
+        } catch (error) {
+        console.error(error); //passing the error object to .error
+        }
+    }
+    getBillData().then((billData) => {
+        const billDiv = document.createElement("div");
+        const bill = new Bill(
+        billData.bill.bill_id,
+        billData.bill.bill_type,
+        billData.bill.title,
+        billData.bill.bill_number,
+        billData.bill.description,
+        billData.bill.committee,
+        billData.bill.status,
+        billData.bill.status_date,
+        billData.bill.body,
+        billData.bill.state_link,
+        billData.bill.subjects,
+        billData.bill.sponsors,
+        billData.bill.votes
+        );
+        
+    })
+}
 // async function getBillData() {
 //     console.log('fetch is working')//method to fetch the getBill API
 //     const response = await fetch(`https://api.legiscan.com/?key=d5c197df7f4d28c4c21bf867cad37a56&op=getBill&id=${this.bill_id}`)
