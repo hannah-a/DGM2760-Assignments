@@ -9,74 +9,40 @@ const vetoedDiv = document.querySelector(".main__vetoed");
 const failedDiv = document.querySelector(".main__failed");
 
 let masterListData = {}//list of bills
-let oldMasterData = localStorage.getItem("masterListData");
-if (oldMasterData) {
-  console.log("You have old data");
-} else {
-  console.log('MasterDataList cached')
-  async function getMasterList() {
+let oldMasterData = localStorage.getItem("masterListData"); //first variable to check if its in storage
+async function getMasterList() {
     try {
       const response = await fetch("./data/masterlist.json");
       return await response.json(); //Return the JSON object
     } catch (error) {
       console.error(error); //passing the error object to .error
     }
-  }
+}
+if (oldMasterData) {
+  console.log("You have old data");
+} else {
+  console.log('MasterDataList cached')
   getMasterList().then((data) => {
     delete data.masterlist.session  
     masterListData = data.masterlist
     let masterStringData = JSON.stringify(masterListData);
     localStorage.setItem("masterListData", masterStringData);
-  })
+  }).catch(function (error) {
+        console.warn(error)
+    })
 }
 
-
-getMasterList().then((data) => {
-  delete data.masterlist.session; //deletes the session object from the list of bills
-  masterListData = data.masterlist;
-  let oldData = localStorage.getItem("masterListData");
-  if (oldData) {
-    //if true
-  } else {
-    let masterStringData = JSON.stringify(masterListData);
-    localStorage.setItem("masterListData", masterStringData);
-  }
+let billsData = {}
+function makeBills() {
   const parsedMasterListData = JSON.parse(
-    localStorage.getItem("masterListData")
+    localStorage.getItem("masterListData") //second variable to use as parsed data
   );
 
   for (const [key, value] of Object.entries(parsedMasterListData)) {
-    async function getBillData() {
-      // console.log("fetch is working");
-      try {
-        const response = await fetch(
-          `https://api.legiscan.com/?key=3e56f611f2b68a14164437a677ff1010&op=getBill&id=${value.bill_id}`
-        ); //fetch the getBill API
-        return await response.json();
-      } catch (error) {
-        console.error(error); //passing the error object to .error
-      }
-    }
-    getBillData().then((billData) => {
-      const billDiv = document.createElement("div");
-      const bill = new Bill(
-        billData.bill.bill_id,
-        billData.bill.bill_type,
-        billData.bill.title,
-        billData.bill.bill_number,
-        billData.bill.description,
-        billData.bill.committee,
-        billData.bill.status,
-        billData.bill.status_date,
-        billData.bill.body,
-        billData.bill.state_link,
-        billData.bill.subjects,
-        billData.bill.sponsors,
-        billData.bill.votes
-      );
-    });
+   
   }
-});
+};
+
 //event listener on billDiv needs to run function that takes the reduced rollcall id's, gets the data and then takes the user to another page to display the data of the members list. So if I make that a seperate api call and function then i can pass in the roll_call_id's I need into it so I'm going to need to reduce the roll calls for every bill so that I can get those pass those two id's into the new function call.
 
 //localStorage.getItem()
@@ -127,6 +93,80 @@ class Bill {
       };
   }
 }
+
+
+//to make each bill on click
+// async function getBillData() {
+//     console.log("fetch is working");
+//     try {
+//       const response = await fetch(`./data/UT/bill/${value.number}.json`); //fetch the getBill API
+//       return await response.json();
+//     } catch (error) {
+//       console.error(error); //passing the error object to .error
+//     }
+//   }
+//   getBillData().then((billData) => {
+//     const billDiv = document.createElement("div");
+//     const bill = new Bill(
+//       billData.bill.bill_id,
+//       billData.bill.bill_type,
+//       billData.bill.title,
+//       billData.bill.bill_number,
+//       billData.bill.description,
+//       billData.bill.committee,
+//       billData.bill.status,
+//       billData.bill.status_date,
+//       billData.bill.body,
+//       billData.bill.state_link,
+//       billData.bill.subjects,
+//       billData.bill.sponsors,
+//       billData.bill.votes
+//     );
+//     console.log(bill)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // async function getBillData() {
 //     console.log('fetch is working')//method to fetch the getBill API
