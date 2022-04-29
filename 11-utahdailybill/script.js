@@ -1,3 +1,5 @@
+
+
 const prefiledDiv = document.querySelector(".main__prefiled");
 const introducedDiv = document.querySelector(".main__introduced");
 const engrossedDiv = document.querySelector(".main__engrossed");
@@ -11,11 +13,10 @@ let oldMasterData = localStorage.getItem("masterListData");
 if (oldMasterData) {
   console.log("master is working");
 } else {
+    console.log('is this running every time?')
   async function getMasterList() {
     try {
-      const response = await fetch(
-        "https://api.legiscan.com/?key=3e56f611f2b68a14164437a677ff1010&op=getMasterList&state=ut"
-      );
+      const response = await fetch("./data/masterlist.json");
       return await response.json(); //Return the JSON object
     } catch (error) {
       console.error(error); //passing the error object to .error
