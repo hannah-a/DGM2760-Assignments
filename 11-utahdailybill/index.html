@@ -5,49 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/11-utahdailybill/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Utah Daily Bill</title>
   </head>
   <body class="body">
     <header class="header">
       <h1 class="header__title">Utah Daily Bills</h1>
+      <h2 class="header__subtitle">For the 2022 General Session</h2>
     </header>
-    <nav class="nav">
-      <a href="/" class="nav__link" data-link>Home</a>
-      <a href="/bills" class="nav__link" data-link>Bills</a>
-    </nav>
     <main class="main">
       <div class="main__statusesDivFlex">
-        <div class="main__prefiledContainer">
+        <div class="main__prefiledContainer main__statusDiv">
           <h2 class="main__prefiledH2 main__statusTitle">Prefiled</h2>
           <div class="main__prefiled"></div>
         </div>
-        <div class="main__introducedContainer">
+        <div class="main__introducedContainer main__statusDiv">
           <h2 class="main__introducedH2 main__statusTitle">Introduced</h2>
           <div class="main__introduced"></div>
         </div>
-        <div class="main__engrossedContainer">
+        <div class="main__engrossedContainer main__statusDiv">
           <h2 class="main__engrossedH2 main__statusTitle">Engrossed</h2>
           <div class="main__engrossed"></div>
         </div>
-        <div class="main__enrolledContainer">
+        <div class="main__enrolledContainer main__statusDiv">
           <h2 class="main__enrolledH2 main__statusTitle">Enrolled</h2>
           <div class="main__enrolled"></div>
         </div>
-        <div class="main__passedContainer">
+        <div class="main__passedContainer main__statusDiv">
           <h2 class="main__passedH2 main__statusTitle">Passed</h2>
           <div class="main__passed"></div>
         </div>
-        <div class="main__vetoedContainer">
-          <h2 class="main__vetoedH2 main__statusTile">Vetoed</h2>
+        <div class="main__vetoedContainer main__statusDiv">
+          <h2 class="main__vetoedH2 main__statusTitle">Vetoed</h2>
           <div class="main__vetoed"></div>
         </div>
-        <div class="main__failedContainer">
-          <h2 class="main__failedH2 main__failedTitle">Failed</h2>
+        <div class="main__failedContainer main__statusDiv">
+          <h2 class="main__failedH2 main__statusTitle">No Support</h2>
           <div class="main__failed"></div>
         </div>
       </div>
     </main>
-
+    <footer class="footer">
+      <p class="footer__copyright">&copy;2022 by Hannah Armstrong for Educational Purposes, using the LegiScan Api</p>
+    </footer>
     <script type="module" src="/11-utahdailybill/script.js"></script>
   </body>
 </html>
