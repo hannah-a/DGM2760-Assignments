@@ -13,7 +13,7 @@
     padding: 1rem;
 }
 .header {
-    padding: 1rem;
+    padding: 2rem;
 }
 .header__title {
     font-weight: 700;
@@ -23,14 +23,29 @@
     display: flex;
     justify-content: space-between;
 
-    font-weight: 400;
+    font-weight: 700;
 }
 .main__statusDiv {
     margin-left: 1rem;
+
+    border-radius: 10px 10px 0 0;
 }
 .main__billDiv {
-    padding: 1rem 0;
+    padding: 1rem;
 }
-h2 {
-    font-weight: 400;
+.main__prefiledContainer, .main__introducedContainer, .main__vetoedContainer, .main__engrossedContainer {
+    background-color: rgb(6, 1, 27);
+    color: white;
+}
+.main__statusTitle {
+     padding: 1rem;
+}
+.main__billTitle {
+    font-weight: 600;
+}
+.main__billNumber {
+    font-weight: 300;
+}
+.main__billStatusDate {
+    font-weight: 300;
 }
