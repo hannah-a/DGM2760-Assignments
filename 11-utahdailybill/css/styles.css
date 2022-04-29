@@ -1,1 +1,1 @@
-.main__statusesDivFlex{display:flex;justify-content:space-between}
+*{margin:0;box-sizing:border-box}.body{font-family:'Radio Canada', sans-serif;background-color:#f9f7fa}.main{padding:1rem}.header{padding:1rem}.header__title{font-weight:700}.main__statusesDivFlex{display:flex;justify-content:space-between;font-weight:400}.main__billDiv{padding:1rem}h2{font-weight:400}

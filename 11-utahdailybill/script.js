@@ -38,22 +38,27 @@ function makeBills() {
     localStorage.getItem("masterListData") //second variable to use as parsed data
   );
 
-  for (const [key, value] of Object.entries(parsedMasterListData)) {
+  for (const [key, value] of Object.entries(parsedMasterListData || {})) {
     function makeBill() {
       const billDiv = document.createElement("div");
       const billTitle = document.createElement("h2");
       const billNumber = document.createElement("h3")
-      const billStatus = document.createElement("h4")
+      // const billStatus = document.createElement("h4")
       const billStatusDate = document.createElement("h5")
-    
+      
+      billDiv.className = 'main__billDiv'
+      billTitle.className= 'main__billTitle'
+      billNumber.className = 'main__billNumber'
+      billStatusDate.className = 'main__billStatusDate'
+
       billTitle.textContent = value.title
       billNumber.textContent = value.number
-      billStatus.textContent = value.status
+      // billStatus.textContent = value.status
       billStatusDate.textContent = value.status_date
 
       billDiv.appendChild(billTitle)
       billDiv.appendChild(billNumber)
-      billDiv.appendChild(billStatus)
+      // billDiv.appendChild(billStatus)
       billDiv.appendChild(billStatusDate)
       
       billDiv.addEventListener('click', () => {
@@ -172,7 +177,8 @@ function billClick(number){
         billData.bill.sponsors,
         billData.bill.votes
         );
-        console.log(bill)
+        console.log(bill.state_link)
+        window.open(`${bill.state_link}`, "_blank")
     })
 }
 // async function getBillData() {
