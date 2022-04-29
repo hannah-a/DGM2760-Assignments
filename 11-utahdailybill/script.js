@@ -18,29 +18,32 @@ async function getMasterList() {
     console.error(error); //passing the error object to .error
   }
 }
+
 if (oldMasterData) {
-  console.log("You have old data");
+const parsedMasterListData = JSON.parse(
+    localStorage.getItem("masterListData") //second variable to use as parsed data
+  );
+  makeBills(parsedMasterListData)
 } else {
   console.log("MasterDataList cached");
+
   getMasterList()
     .then((data) => {
       delete data.masterlist.session;
       masterListData = data.masterlist;
       let masterStringData = JSON.stringify(masterListData);
       localStorage.setItem("masterListData", masterStringData);
+      makeBills(masterListData)
     })
     .catch(function (error) {
       console.warn(error);
     });
+
 }
 
 let billsData = {};
-function makeBills() {
-  const parsedMasterListData = JSON.parse(
-    localStorage.getItem("masterListData") //second variable to use as parsed data
-  );
-
-  for (const [key, value] of Object.entries(parsedMasterListData || {})) {
+function makeBills(data) {
+  for (const [key, value] of Object.entries(data || {})) {
     function makeBill() {
       const billDiv = document.createElement("div");
       const billTitle = document.createElement("h2");
@@ -100,7 +103,7 @@ function makeBills() {
     }
   }
 }
-makeBills()
+
 //event listener on billDiv needs to run function that takes the reduced rollcall id's, gets the data and then takes the user to another page to display the data of the members list. So if I make that a seperate api call and function then i can pass in the roll_call_id's I need into it so I'm going to need to reduce the roll calls for every bill so that I can get those pass those two id's into the new function call.
 
 //localStorage.getItem()
