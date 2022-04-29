@@ -157,7 +157,6 @@ function billClick(number){
         }
     }
     getBillData().then((billData) => {
-        const billDiv = document.createElement("div");
         const bill = new Bill(
         billData.bill.bill_id,
         billData.bill.bill_type,
@@ -173,7 +172,7 @@ function billClick(number){
         billData.bill.sponsors,
         billData.bill.votes
         );
-        
+        console.log(bill)
     })
 }
 // async function getBillData() {
