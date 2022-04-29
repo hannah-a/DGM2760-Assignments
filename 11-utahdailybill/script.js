@@ -6,6 +6,7 @@ const passedDiv = document.querySelector(".main__passed");
 const vetoedDiv = document.querySelector(".main__vetoed");
 const failedDiv = document.querySelector(".main__failed");
 
+let masterListData = {}//list of bills
 let oldMasterData = localStorage.getItem("masterListData");
 if (oldMasterData) {
   console.log("master is working");
@@ -28,7 +29,7 @@ if (oldMasterData) {
   })
 }
 
-let masterListData = {}; //list of bills
+
 getMasterList().then((data) => {
   delete data.masterlist.session; //deletes the session object from the list of bills
   masterListData = data.masterlist;
