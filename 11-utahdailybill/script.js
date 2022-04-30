@@ -20,10 +20,11 @@ async function getMasterList() {
 }
 
 if (oldMasterData) {
-const parsedMasterListData = JSON.parse(
+  const parsedMasterListData = JSON.parse(
     localStorage.getItem("masterListData") //second variable to use as parsed data
   );
   makeBills(parsedMasterListData)
+  console.log('You already have the data')
 } else {
   console.log("MasterDataList cached");
 
@@ -186,33 +187,7 @@ function billClick(number){
         window.open(`${bill.state_link}`, "_blank")
     })
 }
-// async function getBillData() {
-//     console.log('fetch is working')//method to fetch the getBill API
-//     const response = await fetch(`https://api.legiscan.com/?key=d5c197df7f4d28c4c21bf867cad37a56&op=getBill&id=${this.bill_id}`)
-//     return await response.json()
-// }
-// console.log(this.getBillData())
-// for(const [key, value] of Object.entries(billList[masterlist])) {
-//     console.log(`${key}, ${value}`)
-//     for(key of bill) {
-//         if(key.status === 0) {
-//             preFiled.push(key.status)
-//         } else if(key.status == 1) {
-//             introduced.push(key.status)
-//         } else if(key.status == 2) {
-//             engrossed.push(key.status)
-//         } else if(key.status == 3) {
-//             enrolled.push(key.status)
-//         } else if(key.status == 4) {
-//             passed.push(key.status)
-//             console.log(passed)
-//         } else if(key.status == 5) {
-//             vetoed.push(key.status)
-//         } else if(key.status == 6) {
-//             failed.push(key.status)
-//         }
-//     }
-// }
+
 
 // return fetch(`https://api.legiscan.com/?key=d5c197df7f4d28c4c21bf867cad37a56&op=getBill&id=${master.masterlist[7].bill_id}`)
 
@@ -279,4 +254,3 @@ function billClick(number){
 
 //DATE CHECKER
 
-//Get the Roll call for the two most recent votes for H and S array.reduce((a, b) => (a.MeasureDate > b.MeasureDate ? a : b));
