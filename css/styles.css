@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Radio Canada", sans-serif;
+  background-color: rgb(249, 247, 250);
+}
+
+.main {
+  padding: 1rem;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.header__title {
+  font-weight: 700;
+}
+
+.main__statusesDivFlex {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.main__statusDiv {
+  margin-left: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.main__billDiv {
+  padding: 1rem;
+}
+
+.main__prefiledContainer, .main__introducedContainer, .main__vetoedContainer, .main__engrossedContainer {
+  background-color: rgb(6, 1, 27);
+  color: white;
+}
+
+.main__statusTitle {
+  padding: 1rem;
+}
+
+.main__billTitle {
+  font-weight: 600;
+}
+
+.main__billNumber {
+  font-weight: 300;
+}
+
+.main__billStatusDate {
+  font-weight: 300;
+}/*# sourceMappingURL=styles.css.map */Flex .main__button-3 {
+  font-family: "Sacramento", cursive;
+  flex-basis: 20%;
+}
+.main__buttonFlex .main__button-4 {
+  font-family: "Miltonian", cursive;
+  flex-basis: 35%;
+  font-size: 3.5vw;
+}
+
+.main__feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 2rem 0;
+  height: 300px;
+  background-color: pink;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.footer {
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */97);
+  color: rgb(230, 230, 230);
+  font-size: 0.8rem;
+  text-align: right;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(206, 206, 206);
+}/*# sourceMappingURL=styles.css.map */gb(206, 228, 206);
+}
+main .buttonsListFlex .treeButtons .tree .addStart:hover {
+  background-color: #6bae6b;
+}
+main .buttonsListFlex .treeButtons .tree .addEnd {
+  border-radius: 10% 10% 40% 40%;
+  background-color: rgb(226, 226, 255);
+}
+main .buttonsListFlex .treeButtons .tree .addEnd:hover {
+  background-color: #afafff;
+}
+main .buttonsListFlex .treeButtons .treeRemoveButtons {
+  width: 100%;
+  padding: 1rem 0;
+}
+main .buttonsListFlex .treeButtons .treeRemoveButtons h2 {
+  padding: 1rem 0;
+}
+main .buttonsListFlex .treeButtons .treeRemoveButtons button {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid rgb(37, 39, 37);
+  background-color: rgb(255, 195, 195);
+  border-radius: 5%;
+  margin: auto;
+}
+main .buttonsListFlex .treeButtons .treeRemoveButtons button:hover {
+  background-color: #ff9090;
+}
+main .buttonsListFlex .treeButtons .manButt {
+  width: 100%;
+  padding: 1rem 0;
+}
+main .buttonsListFlex .treeButtons .manButt h2 {
+  padding: 1rem 0;
+}
+main .buttonsListFlex .treeButtons .manButt button {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid rgb(37, 39, 37);
+  background-color: rgb(223, 195, 255);
+  border-radius: 5%;
+  margin: auto;
+}
+main .buttonsListFlex .treeButtons .manButt button:hover {
+  background-color: #c490ff;
+}
+main .buttonsListFlex .treeButtons .disTree {
+  width: 100%;
+  padding: 1rem 0;
+}
+main .buttonsListFlex .treeButtons .disTree h2 {
+  padding: 1rem 0;
+}
+main .buttonsListFlex .treeButtons .disTree button {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 5px solid rgb(37, 39, 37);
+  background-color: rgb(204, 255, 203);
+  border-radius: 5%;
+  margin: auto;
+}
+main .buttonsListFlex .treeButtons .disTree button:hover {
+  background-color: #9aff98;
+}
+main .buttonsListFlex .treeList {
+  flex-basis: 50%;
+}
+main .buttonsListFlex .treeList .stickyDiv {
+  position: fixed;
+}
+main .buttonsListFlex .treeList div#displayResults {
+  width: clamp(2rem, 30vw, 400px);
+  margin-top: 1rem;
+  height: 400px;
+  background-color: rgb(252, 247, 220);
+  padding: 2rem 3rem;
+  border-radius: 10%;
+}
+main .buttonsListFlex .treeList #warning {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+main .buttonsListFlex .treeList #error {
+  color: rgb(104, 27, 27);
+  font-weight: 900;
+  background-color: white;
+}
+main .buttonsListFlex .treeList img {
+  width: clamp(100px, 50%, 400px);
+  height: auto;
+  position: relative;
+  bottom: 25vh;
+  left: 5vw;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px grey;
+}
+
+footer {
+  margin-top: 15rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  color: grey;
+}
+footer .citedImages {
+  text-align: justify;
+  font-size: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */
